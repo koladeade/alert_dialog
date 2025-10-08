@@ -1,8 +1,8 @@
-# alert_dialog
+# Alert_dialog
 
 Alertdialog widget is  a pop up box that appears in front of the content of the app to get the users attention. 
 
-## run instructions
+## Run instructions
 Clone this repository:
 
 git clone https://github.com/koladeade/alert_dialog.git
@@ -22,12 +22,15 @@ Run the app:
 
 flutter run
 
-## atributes
+## Attributes
 Title = Displays a short heading or icon at the top of the dialog. Used to indicate what the dialog is about.
 
 content = The main body of the dialog where text or widgets can be placed.
 
 shape = Defines the outer shape of the dialog, such as rounded corners or custom borders.
 
-# screenshot 
+# Screenshot 
 <img width="1440" height="900" alt="Screenshot 2025-10-08 at 10 42 06 PM" src="https://github.com/user-attachments/assets/8b142feb-9686-412c-a8ee-77d963d5a76b" />
+
+#Date of presentation
+October 8th, 2025
