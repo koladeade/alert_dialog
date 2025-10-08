@@ -30,4 +30,4 @@ content = The main body of the dialog where text or widgets can be placed.
 shape = Defines the outer shape of the dialog, such as rounded corners or custom borders.
 
 # screenshot 
-
+<img width="1440" height="900" alt="Screenshot 2025-10-08 at 10 42 06 PM" src="https://github.com/user-attachments/assets/8b142feb-9686-412c-a8ee-77d963d5a76b" />
