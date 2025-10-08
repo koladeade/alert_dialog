@@ -1,16 +1,33 @@
 # alert_dialog
 
-A new Flutter project.
+Alertdialog widget is  a pop up box that appears in front of the content of the app to get the users attention. 
 
-## Getting Started
+## run instructions
+Clone this repository:
 
-This project is a starting point for a Flutter application.
+git clone https://github.com/koladeade/alert_dialog.git
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Navigate into the project folder:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+cd alertdialog_demo
+
+
+Get dependencies:
+
+flutter pub get
+
+
+Run the app:
+
+flutter run
+
+## atributes
+Title = Displays a short heading or icon at the top of the dialog. Used to indicate what the dialog is about.
+
+content = The main body of the dialog where text or widgets can be placed.
+
+shape = Defines the outer shape of the dialog, such as rounded corners or custom borders.
+
+# screenshot 
+

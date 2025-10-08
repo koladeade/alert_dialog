@@ -21,10 +21,8 @@ class TaskListScreen extends StatefulWidget {
 }
 
 class _TaskListScreenState extends State<TaskListScreen> {
-  // List of tasks to display
   List<String> tasks = ['Watch Edpuzzle', 'Finish homework'];
 
-  // Function to delete a task
   void _deleteTask(int index) {
     setState(() {
       tasks.removeAt(index);
@@ -37,17 +35,13 @@ class _TaskListScreenState extends State<TaskListScreen> {
     );
   }
 
-  // Function to show the delete confirmation dialog
   void _showDeleteDialog(BuildContext context, int index) {
     showDialog(
       context: context,
-      // PROPERTY 1: barrierDismissible
-      // If false, user MUST tap a button to close the dialog
+
       barrierDismissible: false,
       builder: (BuildContext context) {
         return AlertDialog(
-          // PROPERTY 2: title
-          // The heading widget at the top of the dialog
           title: Row(
             children: [
               Icon(Icons.warning_amber_rounded, color: Colors.orange, size: 28),
@@ -55,27 +49,20 @@ class _TaskListScreenState extends State<TaskListScreen> {
               Text('Confirm Delete'),
             ],
           ),
-
-          // PROPERTY 3: content
-          // The main message body of the dialog
           content: Text(
             'Are you sure you want to delete "${tasks[index]}"?\n\nThis action cannot be undone.',
             style: TextStyle(fontSize: 16),
           ),
-
-          // Actions: buttons at the bottom of the dialog
           actions: [
-            // Cancel button
             TextButton(
               child: Text(
                 'Cancel',
                 style: TextStyle(color: Colors.grey, fontSize: 16),
               ),
               onPressed: () {
-                Navigator.of(context).pop(); // Close dialog
+                Navigator.of(context).pop();
               },
             ),
-            // Delete button
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red,
@@ -83,13 +70,11 @@ class _TaskListScreenState extends State<TaskListScreen> {
               ),
               child: Text('Delete', style: TextStyle(fontSize: 16)),
               onPressed: () {
-                Navigator.of(context).pop(); // Close dialog
-                _deleteTask(index); // Delete the task
+                Navigator.of(context).pop();
+                _deleteTask(index);
               },
             ),
           ],
-
-          // Additional styling
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),
           ),
