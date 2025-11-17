@@ -2,6 +2,9 @@
 
 Alertdialog widget is  a pop up box that appears in front of the content of the app to get the users attention. 
 
+#Slides:
+[Link to my presentation slides](https://www.canva.com/design/DAG4-MfInWc/mk1-f5adEgsmlW_9Y1Zrxw/edit?utm_content=DAG4-MfInWc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 ## Run instructions
 Clone this repository:
 
